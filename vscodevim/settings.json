@@ -1,0 +1,101 @@
+{
+    "editor.lineNumbers": "relative",
+    "explorer.sortOrder": "modified",
+    "editor.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "editor.fontSize": 18,
+    "terminal.integrated.fontSize": 18,
+    "vim.smartRelativeLine": true,
+    "window.zoomLevel": 0.9,
+    "editor.multiCursorLimit": 100000,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "projectManager.any.baseFolders": [
+        "/home/signalx16/"
+    ],
+    "vim.leader": "<Space>",
+    "vim.foldfix": true,
+    "vim.hlsearch": true,
+    // "vim.useSystemClipboard": true,
+    "vim.highlightedyank.enable": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["g", "p", "d"],
+        "commands": ["editor.action.peekDefinition"]
+        },
+        {
+        "before": ["g", "h"],
+        "commands": ["editor.action.showDefinitionPreviewHover"]
+        },
+        {
+        "before": ["g", "i"],
+        "commands": ["editor.action.goToImplementation"]
+        },
+        {
+        "before": ["g", "p", "i"],
+        "commands": ["editor.action.peekImplementation"]
+        },
+        {
+        "before": ["g", "q"],
+        "commands": ["editor.action.quickFix"]
+        },
+        {
+        "before": ["g", "r"],
+        "commands": ["editor.action.referenceSearch.trigger"]
+        },
+        {
+        "before": ["g", "t"],
+        "commands": ["editor.action.goToTypeDefinition"]
+        },
+        {
+        "before": ["g", "p", "t"],
+        "commands": ["editor.action.peekTypeDefinition"]
+        },
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+        // { "before": ["d", "d"], "after": ["\"","a","d","d"] },
+        // { "before": ["leader", "s"], "commands": [":split"] },
+        { "before": ["c-a"], "after": ["g","g","V","G"]},
+        { "before": ["leader","p"], "after":["\"","+","p"]},
+        { "before": ["leader","y"], "after":["\"","+","y"]},
+        { "before": ["leader", "v"], "commands": [":vsplit"] },
+        { "before": ["leader", "h"], "commands": ["workbench.action.focusLeftGroup"] },
+        { "before": ["leader", "j"], "commands": ["workbench.action.focusBelowGroup"] },
+        { "before": ["leader", "k"], "commands": ["workbench.action.focusAboveGroup"] },
+        { "before": ["leader", "l"], "commands": ["workbench.action.focusRightGroup"] },
+        { "before": ["leader", "w"], "commands": [":w!"] },
+        { "before": ["leader", "q"], "commands": [":q!"] },
+        { "before": ["leader", "x"], "commands": [":x!"] },
+        { "before": ["[", "d"], "commands": ["editor.action.marker.prev"] },
+        { "before": ["]", "d"], "commands": ["editor.action.marker.next"] },
+        { "before": ["<leader>", "c", "a"], "commands": ["editor.action.quickFix"] },
+        { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+        { "before": ["g", "h"], "commands": ["editor.action.showDefinitionPreviewHover"] }, 
+    ],
+    "vim.visualModeKeyBindings": [
+        //shortcut to delete to another register
+        { "before": ["leader","p"], "after":["\"","+","p"]},
+        { "before": ["leader","y"], "after":["\"","+","y"]},
+        { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+        { "before": [">"], "commands": ["editor.action.indentLines"] },
+        { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+        { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    ],
+    "cmake.configureOnOpen": false,
+    "editor.guides.bracketPairs": true,
+    "workbench.colorCustomizations": {
+        "editorIndentGuide.background1": "#607D8B",
+        "editorIndentGuide.activeBackground1": "#FF9800",
+        // "list.activeSelectionBackground": "#608B4E",
+        "list.focusBackground": "#9b3e3e"
+    },
+    "explorer.compactFolders": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Visual Studio Dark - C++"
+ 
+}      

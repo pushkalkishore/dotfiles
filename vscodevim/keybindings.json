@@ -20,7 +20,7 @@
     "key": "ctrl+shift+c",
     "command": "workbench.action.terminal.sendSequence",
     "args": {
-      "text": "\u0011"
+      "text": "\u0003"
     },
     "when": "terminalFocus"
   },

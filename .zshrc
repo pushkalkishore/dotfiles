@@ -93,6 +93,7 @@ export VIRTUALENVWRAPPER_VIRTUALENV=/opt/homebrew/bin/virtualenv
 source /opt/homebrew/bin/virtualenvwrapper.sh
 
 
+# Case Insensitive tab
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
